@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(117, 249, 244);
+font-family: Noto Sans SC;</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="clear_btn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+background-color: rgba(255,255,255,30);
+border: 2px solid rgba(255,255,255,40);
+border-radius: 10px;
+font: bold;
+font-size: 20px;
+color: black;
+}
+QPushButton::hover {
+background-color: rgba(255,255,255,50);
+}
+QPushButton::pressed {
+background-color: rgba(255,255,255,80);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Очистить таблицу</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res_rc.qrc">
+              <normaloff>:/icons/icons/clear.svg</normaloff>:/icons/icons/clear.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="confidence_probability_btn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+background-color: rgba(255,255,255,30);
+border: 2px solid rgba(255,255,255,40);
+border-radius: 10px;
+font: bold;
+font-size: 20px;
+color: black;
+}
+QPushButton::hover {
+background-color: rgba(255,255,255,50);
+}
+QPushButton::pressed {
+background-color: rgba(255,255,255,80);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Задать доверительную вероятность</string>
+            </property>
+            <property name="icon">
+             <iconset resource="res_rc.qrc">
+              <normaloff>:/icons/icons/confidence.svg</normaloff>:/icons/icons/confidence.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="uncertainty_table">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="uncerteinty_typeb_btn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgba(255,255,255,30);
+border: 2px solid rgba(255,255,255,40);
+border-radius: 10px;
+font: bold;
+font-size: 20px;
+color: black;
+}
+QPushButton::hover {
+background-color: rgba(255,255,255,50);
+}
+QPushButton::pressed {
+background-color: rgba(255,255,255,80);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Задать неопределённость типа B</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res_rc.qrc">
+            <normaloff>:/icons/icons/uncertainty.svg</normaloff>:/icons/icons/uncertainty.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="add_value">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgba(255,255,255,30);
+border: 2px solid rgba(255,255,255,40);
+border-radius: 10px;
+font: bold;
+font-size: 20px;
+color: black;
+}
+QPushButton::hover {
+background-color: rgba(255,255,255,50);
+}
+QPushButton::pressed {
+background-color: rgba(255,255,255,80);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Добавить значение</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res_rc.qrc">
+            <normaloff>:/icons/icons/add.svg</normaloff>:/icons/icons/add.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="save_btn">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+background-color: rgba(255,255,255,30);
+border: 2px solid rgba(255,255,255,40);
+border-radius: 10px;
+font: bold;
+font-size: 20px;
+color: black;
+}
+QPushButton::hover {
+background-color: rgba(255,255,255,50);
+}
+QPushButton::pressed {
+background-color: rgba(255,255,255,80);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Сохранить</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res_rc.qrc">
+            <normaloff>:/icons/icons/save.svg</normaloff>:/icons/icons/save.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
